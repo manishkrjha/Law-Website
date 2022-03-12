@@ -5,9 +5,18 @@ module.exports = {
   theme: {
     extend: {
       transitionProperty: {
-        'width' : 'width'
-      }
+       width : 'width',
+        bottom: "bottom",
+      },
+      width: {
+        "device-width": "360px",
+      },
+      height: {
+        "device-height": "640px",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
