@@ -11,7 +11,7 @@ export default function CreatePost() {
     
     const navigate = useNavigate();
 
-    const handleSubmit = (data) => {
+    const handleSubmit = async (data) => {
         setBusy(true);
         // create post is a backend method
         const {error, post} = await createPost(data);

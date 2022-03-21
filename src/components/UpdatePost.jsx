@@ -26,7 +26,7 @@ function UpdatePost() {
         fetchPost()
     }, [])
 
-    const handleSubmit = (data) => {
+    const handleSubmit = async (data) => {
         setBusy(true);
         // create post is a backend method
         const {error, post} = await updatePost(postInfo.id, data);
