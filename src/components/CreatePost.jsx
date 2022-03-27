@@ -36,4 +36,10 @@ export default function CreatePost() {
     return (
         <PostForm onSubmit={handleSubmit} initialPost={postInfo} busy={busy} postBtnTitle="Post" resetAfterSubmit={resetAfterSubmit}/>
     )
+
+    // return(
+    //     <div>
+    //         Create Post;
+    //     </div>
+    // )
 }

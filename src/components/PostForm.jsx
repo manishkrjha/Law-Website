@@ -153,8 +153,8 @@ function PostForm({initialPost, busy, postBtnTitle, resetAfterSubmit ,onSubmit})
                     Create New Post
                 </h1>
 
-                <div className="flex items-center">
-                    <button onClick={resetForm} type="button" className="flex items-center space-x-2 px-3 ring-1 rounded h10 ring-blue-500 text-blue-500 hover:text-white hover:bg-blue-500 transition">
+                <div className="flex items-center space-x-5">
+                    <button onClick={resetForm} type="button" className="flex items-center space-x-2 px-3 ring-1 rounded h-10 ring-blue-500 text-blue-500 hover:text-white hover:bg-blue-500 transition">
                         <ImSpinner11 />
                         <span>Reset</span>
                     </button>

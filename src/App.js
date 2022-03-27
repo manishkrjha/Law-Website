@@ -21,14 +21,14 @@ function App() {
   return (
     <div className="flex">
       {/* nav section */}
-      <div className={ getNavWidth() + ' min-h-screen  transition-width border border-r'}>
+      <div className={ getNavWidth() + ' min-h-screen transition-width border border-r'}>
         <div className='sticky top-0'>
            <Navbar closed={closedNav} />
         </div>
       </div>
 
       {/* content section */}
-      <div className='flex-1 min-h-screen '>
+      <div className='flex-1 min-h-screen'>
         <div className='sticky top-0'>
         <div className='flex item-center p-2 space-x-2'>
             <button onClick={toggleNav}>
@@ -36,6 +36,7 @@ function App() {
                 closedNav ? (<AiOutlineMenuFold size={25} />)  : (<AiOutlineMenuUnfold size={25} />) 
               }
             </button>
+            {/* search bar */}
             <SearchBar />
           </div>
         </div>
@@ -45,9 +46,9 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />}/>
               <Route path="/create-post" element={ <CreatePost /> }/>
-              <Route path="/update-post" element={<UpdatePost />}/>
+              <Route path="/update-post/:slug" element={<UpdatePost />}/>
               <Route path="*" element={<NotFound />}/>
-              </Routes>
+            </Routes>
           </div>
       </div>
       
